@@ -1,4 +1,4 @@
-import Stapler from "#/Stapler.jpg";
+import Stapler from "#/stapler.jpg";
 import Image from "next/image";
 
 const Itemcard = () => (
