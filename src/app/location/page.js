@@ -6,8 +6,8 @@ export default function List() {
   return (
     <div>
       {/* Title */}
-      <div className="flex flex-col items-center gap-y-2 px-10 min-h-screen">
-        <p class="text-lg font-bold pb-5 text-white">Location</p>
+      <div className="flex flex-col items-center gap-y-2 px-10 min-h-screen text-white">
+        <p class="text-lg font-bold pb-5">Location</p>
         <Image
           src={Building}
           className="rounded-xl"

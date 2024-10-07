@@ -1,40 +1,60 @@
-import Itemcard from "@/app/components/Itemcard";
+import Cart from "@/app/components/Cart";
+import Itemlist from "@/app/components/Itemlist";
 import Link from "next/link";
 export default function List() {
+  const items = [
+    {
+      id: 1,
+      name: "Pencil",
+      amount: 100,
+      image_url:
+        "https://media.allonline.7eleven.co.th/pdmain/357812_01_pencil_yoya.jpg",
+    },
+    {
+      id: 2,
+      name: "Marker",
+      amount: 50,
+      image_url:
+        "https://www.dealtique.com/image/cache/catalog/Items/S0025-6-1000x1000w.jpg",
+    },
+    {
+      id: 3,
+      name: "Eraser",
+      amount: 200,
+      image_url:
+        "https://down-th.img.susercontent.com/file/dd32d263b8ceb89f533682348594b66b",
+    },
+    {
+      id: 4,
+      name: "Ruler",
+      amount: 75,
+      image_url: "https://inwfile.com/s-ge/0x4m3q.jpg",
+    },
+    {
+      id: 5,
+      name: "Stapler",
+      amount: 30,
+      image_url:
+        "https://www.bbblogr.com/wp-content/uploads/2016/02/Zenith-Plier-Stapler-520-25.jpg",
+    },
+    {
+      id: 6,
+      name: "Scissors",
+      amount: 45,
+      image_url:
+        "https://down-th.img.susercontent.com/file/8d1527c9dd73a6b99d11fd2bcdabdf0f",
+    },
+  ];
   return (
-    <div className="flex flex-col min-h-screen">
-      {/* Title */}
-      <div className="flex flex-col items-center gap-y-2 pb-5">
-        <p class="text-lg font-bold pb-5 text-white">รายการพัสดุ</p>
+    <div className="flex flex-col items-center">
+      <Cart />
 
-        <div className="flex gap-2">
-          <Itemcard />
-          <Itemcard />
-        </div>
-        <div className="flex gap-2">
-          <Itemcard />
-          <Itemcard />
-        </div>
-        <div className="flex gap-2">
-          <Itemcard />
-          <Itemcard />
-        </div>
-        <div className="flex gap-2">
-          <Itemcard />
-          <Itemcard />
-        </div>
-        <div className="flex gap-2">
-          <Itemcard />
-          <Itemcard />
-        </div>
-        <div className="flex gap-2">
-          <Itemcard />
-          <Itemcard />
-        </div>
-      </div>
+      {/* Title */}
+      <p className="text-lg font-semibold pb-5 pt-5 text-white">รายการพัสดุ</p>
+      <Itemlist items={items} />
 
       {/* menu */}
-      <div className="bottom-0 sticky bg-white h-32 w-full rounded-tl-3xl rounded-tr-3xl px-5 pt-5">
+      <div className="fixed bottom-0 bg-white h-32 w-full rounded-tl-3xl rounded-tr-3xl px-5 pt-5">
         <div className="bg-[#C7EC96] h-10 text-black rounded-full flex justify-center items-center">
           <p>ยืมเลย</p>
         </div>
