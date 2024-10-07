@@ -23,7 +23,7 @@ export default async function Home() {
       name: "Marker",
       amount: 50,
       image_url:
-        "https://www.dealtique.com/image/cache/catalog/Items/S0025-6-1000x1000w.jpg",
+        "https://image.makewebcdn.com/makeweb/m_1920x0/QCaGJLM49/1/%E0%B9%80%E0%B8%84%E0%B8%A1%E0%B8%B5%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87.jpg",
     },
     {
       id: 3,
