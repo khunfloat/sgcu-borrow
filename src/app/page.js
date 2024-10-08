@@ -1,7 +1,10 @@
+"use client";
+
 import SgcuLogo from "#/sgculogo.png";
 import Cart from "@/app/components/Cart";
 import Image from "next/image";
 import Link from "next/link";
+import { CartProvider } from "react-use-cart";
 import Itemlist from "./components/Itemlist";
 
 export default async function Home() {
@@ -54,7 +57,7 @@ export default async function Home() {
     },
   ];
   return (
-    <div>
+    <CartProvider id="items">
       <Cart />
       <div className="flex flex-col items-center">
         {/* Title */}
@@ -102,6 +105,6 @@ export default async function Home() {
           </p>
         </div>
       </div>
-    </div>
+    </CartProvider>
   );
 }

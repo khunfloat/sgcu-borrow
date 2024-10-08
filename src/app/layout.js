@@ -1,7 +1,4 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin-ext"] });
 
 export const metadata = {
   title: "SGCU Borrow System",
@@ -12,8 +9,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${inter.className} min-h-screen bg-gradient-to-b from-[#F3447B] to-[#FEA1BE] pt-5`}
-        // className={`${inter.className} min-h-screen bg-gradient-to-b from-[#ffffff] to-[#F3447B] pt-3`}
+        className={`min-h-screen bg-gradient-to-b from-[#F3447B] to-[#FEA1BE] pt-5`}
       >
         {children}
       </body>
