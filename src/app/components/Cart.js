@@ -11,7 +11,7 @@ export default function Cart() {
           <Image
             src={CartIcon}
             alt="Sdcu logo"
-            className="items-center mx-auto rounded-md w-8 h-8 z-30"
+            className="items-center mx-auto rounded-md w-8 h-8 z-40"
           />
         </div>
         <p className="z-50 text-white bg-red-600 h-5 w-5 text-sm text-center rounded-full -ml-3">

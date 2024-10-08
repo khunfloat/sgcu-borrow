@@ -58,7 +58,6 @@ export default async function Home() {
   ];
   return (
     <CartProvider id="items">
-      <Cart />
       <div className="flex flex-col items-center">
         {/* Title */}
         <div className="flex flex-col items-center gap-y-2">
@@ -105,6 +104,8 @@ export default async function Home() {
           </p>
         </div>
       </div>
+
+      <Cart />
     </CartProvider>
   );
 }

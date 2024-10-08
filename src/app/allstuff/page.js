@@ -51,8 +51,6 @@ export default function List() {
   return (
     <CartProvider id="items">
       <div className="flex flex-col items-center">
-        <Cart />
-
         {/* Title */}
         <p className="text-lg font-semibold pb-5 pt-5 text-white">
           รายการพัสดุ
@@ -69,6 +67,7 @@ export default function List() {
           </p>
         </div>
       </div>
+      <Cart />
     </CartProvider>
   );
 }
